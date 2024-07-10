@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/quote.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="frame">
+        <div class="center">
+
+            <p class="content">
+                <span class="quote">&rdquo;</span>
+            <div class="quotecontent">
+                I know quite certainly that I myself have no special talent; curiosity, <span class="highlight-word">
+                    obsession
+                </span>
+                and dogged endurance, combined with self-criticism have brought me to my ideas.
+            </div>
+            <div class="author">
+                Albert Einstein
+            </div>
+            <div class="meaning">
+                <p class="phonetic">[əbˈseʃ(ə)n] <i class="fa-solid fa-volume-high"></i></p>
+                <p class="define">
+                    <span class="highlight">
+                        Obsession
+                    </span>, a persistent disturbing preoccupation with an often unreasonable idea or feeling.
+                </p>
+            </div>
+            </p>
+        </div>
+    </div>
+
+</body>
+<script src="./js/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".highlight-word").mouseenter(function () {
+            $(".meaning").fadeIn().css("display", "block");
+        });
+        $(".highlight-word").mouseleave(function () {
+            $(".meaning").fadeOut().css("display", "none");
+        });
+    });
+</script>
+
+</html>
